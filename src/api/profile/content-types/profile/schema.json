@@ -32,9 +32,6 @@
     "position": {
       "type": "string"
     },
-    "status_active": {
-      "type": "boolean"
-    },
     "type": {
       "type": "string"
     }
