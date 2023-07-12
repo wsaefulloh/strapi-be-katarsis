@@ -4,16 +4,14 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project"
+    "displayName": "Project",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "name_menu": {
-      "type": "string"
-    },
     "submenu": {
       "type": "relation",
       "relation": "oneToOne",
@@ -35,7 +33,7 @@
       "type": "string"
     },
     "about": {
-      "type": "string"
+      "type": "text"
     },
     "metrics_one_title": {
       "type": "string"
@@ -50,30 +48,37 @@
       "type": "string"
     },
     "desc_result": {
-      "type": "string"
+      "type": "text"
     },
     "images_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "vde_media": {
+    "video_media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "url_website": {
       "type": "string"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
     }
   }
 }

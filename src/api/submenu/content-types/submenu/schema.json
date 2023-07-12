@@ -4,7 +4,8 @@
   "info": {
     "singularName": "submenu",
     "pluralName": "submenus",
-    "displayName": "Submenu"
+    "displayName": "Submenu",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,8 +15,10 @@
     "name_submenu": {
       "type": "string"
     },
-    "name_menu": {
-      "type": "string"
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
     }
   }
 }
