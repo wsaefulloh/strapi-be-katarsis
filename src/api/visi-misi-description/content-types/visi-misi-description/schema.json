@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visi_misi_descriptions",
+  "info": {
+    "singularName": "visi-misi-description",
+    "pluralName": "visi-misi-descriptions",
+    "displayName": "Visi Misi Description"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "contents",
+  "collectionName": "profiles",
   "info": {
-    "singularName": "content",
-    "pluralName": "contents",
-    "displayName": "Content",
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "Profile",
     "description": ""
   },
   "options": {
@@ -12,16 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "type": {
+    "name": {
       "type": "string"
     },
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
-    "images": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -31,6 +25,18 @@
         "videos",
         "audios"
       ]
+    },
+    "url_linkedin": {
+      "type": "text"
+    },
+    "position": {
+      "type": "string"
+    },
+    "status_active": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

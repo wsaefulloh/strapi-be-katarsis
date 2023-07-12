@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "contents",
+  "collectionName": "process_workflows",
   "info": {
-    "singularName": "content",
-    "pluralName": "contents",
-    "displayName": "Content",
-    "description": ""
+    "singularName": "process-workflow",
+    "pluralName": "process-workflows",
+    "displayName": "Process Workflow"
   },
   "options": {
     "draftAndPublish": true
@@ -15,22 +14,21 @@
     "type": {
       "type": "string"
     },
-    "title": {
+    "count": {
       "type": "string"
     },
     "description": {
       "type": "text"
     },
-    "images": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
+    "image": {
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
