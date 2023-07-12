@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "submenus",
+  "info": {
+    "singularName": "submenu",
+    "pluralName": "submenus",
+    "displayName": "Submenu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_submenu": {
+      "type": "string"
+    },
+    "name_menu": {
+      "type": "string"
+    }
+  }
+}

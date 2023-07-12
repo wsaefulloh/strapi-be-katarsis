@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departements",
+  "info": {
+    "singularName": "departement",
+    "pluralName": "departements",
+    "displayName": "Departement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_departement": {
+      "type": "string"
+    },
+    "description_departement": {
+      "type": "string"
+    }
+  }
+}

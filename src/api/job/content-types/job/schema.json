@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "departement": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::departement.departement"
+    },
+    "job_title": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "type_job": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

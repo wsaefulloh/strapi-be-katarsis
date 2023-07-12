@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "liputans",
+  "info": {
+    "singularName": "liputan",
+    "pluralName": "liputans",
+    "displayName": "Liputan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
