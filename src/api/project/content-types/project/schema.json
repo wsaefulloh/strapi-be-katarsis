@@ -61,17 +61,6 @@
         "audios"
       ]
     },
-    "video_media": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "url_website": {
       "type": "string"
     },
@@ -79,6 +68,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::menu.menu"
+    },
+    "url_video": {
+      "type": "text"
     }
   }
 }
