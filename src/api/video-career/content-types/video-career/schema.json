@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "video_careers",
+  "info": {
+    "singularName": "video-career",
+    "pluralName": "video-careers",
+    "displayName": "video-career"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
