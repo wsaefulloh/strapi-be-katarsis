@@ -4,7 +4,7 @@
   "info": {
     "singularName": "address",
     "pluralName": "addresses",
-    "displayName": "Address",
+    "displayName": "Company Profile",
     "description": ""
   },
   "options": {
@@ -12,8 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "value": {
+    "address": {
       "type": "text"
+    },
+    "company_name": {
+      "type": "string"
     }
   }
 }
