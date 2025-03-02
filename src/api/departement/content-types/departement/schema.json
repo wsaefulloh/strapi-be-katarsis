@@ -17,6 +17,15 @@
     },
     "description_departement": {
       "type": "text"
+    },
+    "job_description": {
+      "type": "text"
+    },
+    "requirements": {
+      "type": "text"
+    },
+    "url": {
+      "type": "text"
     }
   }
 }
