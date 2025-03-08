@@ -4,19 +4,16 @@
   "info": {
     "singularName": "departement",
     "pluralName": "departements",
-    "displayName": "Departement",
+    "displayName": "Career Content",
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "title_departement": {
+    "title_career_content": {
       "type": "string"
-    },
-    "description_departement": {
-      "type": "text"
     },
     "job_description": {
       "type": "text"

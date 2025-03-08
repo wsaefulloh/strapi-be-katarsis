@@ -1,16 +1,31 @@
 const transporter = require('../../../../helpers/email-service');
+const fs = require('fs');
+const path = require("path");
+// const nodemailer = require("nodemailer");
 
 module.exports = {
     async afterCreate(event) {
-        console.log('masuk')
-        // await transporter.sendMail({
-        //     from: {
-        //         name: "Katarsis Notification Email",
-        //         address: process.env.EMAIL_ADDRESS_FROM,// sender address
-        //     },
-        //     to: process.env.EMAIL_ADDRESS_FOR,// list of receivers
-        //     subject: 'Get in Touch',// Subject line
-        //     html: `<div>Nama : ${event.params.data.name} <br/> Email : ${event.params.data.email} <br/> Pesan : ${event.params.data.message}</div>`
-        // });
+
+        let dataHTML = fs.readFileSync(path.join(__dirname, "../../../../../public/template/admin-notification.html"), { encoding: "utf-8" });
+        dataHTML = dataHTML.replace("{{name}}", `${event.params.data.name}`);
+        dataHTML = dataHTML.replace("{{whatsapp}}", `${event.params.data.no_whatsapp}`);
+        dataHTML = dataHTML.replace("{{email}}", `${event.params.data.email}`);
+        dataHTML = dataHTML.replace("{{message}}", `${event.params.data.message}`);
+
+        let getEmail = await strapi.db.connection.raw(
+            `
+                SELECT * FROM email_settings
+            `
+        );
+
+        await transporter.sendMail({
+            from: {
+                name: "Katarsis Notification",
+                address: `${process.env.EMAIL_ADDRESS_FROM}`,
+            },
+            to: `${getEmail.rows[0]?.email_send_to}`,
+            subject: `${event.params.data?.subject ?? "Admin Notification"}`,
+            html: dataHTML
+        });
     },
 };

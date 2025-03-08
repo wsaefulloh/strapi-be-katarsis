@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_contents",
+  "info": {
+    "singularName": "homepage-content",
+    "pluralName": "homepage-contents",
+    "displayName": "Homepage Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "main_banner": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title_about_us": {
+      "type": "string",
+      "default": "Katarsis is synergistic entertainment ecosystem"
+    },
+    "sub_about_us_1": {
+      "type": "string",
+      "default": "We believe in quality-experiential entertainment to empower Indonesia’s creative potential. "
+    },
+    "sub_about_us_2": {
+      "type": "string",
+      "default": "We believe in quality-experiential entertainment to empower Indonesia’s creative potential. "
+    },
+    "images_about_us": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

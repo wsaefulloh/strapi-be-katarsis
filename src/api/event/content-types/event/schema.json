@@ -4,21 +4,19 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Upcoming Events",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "date": {
-      "type": "date"
-    },
-    "url": {
-      "type": "text"
+    "list_events": {
+      "type": "json"
     }
   }
 }

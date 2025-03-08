@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -60,13 +60,17 @@
     "subtitle": {
       "type": "string"
     },
-    "service_type": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::service-type.service-type"
-    },
     "metrics": {
       "type": "json"
+    },
+    "service_type": {
+      "type": "enumeration",
+      "enum": [
+        "Katarsis Experience",
+        "Katarsis Live",
+        "Katarsis Solutions",
+        "Katarsis Entertaiment"
+      ]
     }
   }
 }

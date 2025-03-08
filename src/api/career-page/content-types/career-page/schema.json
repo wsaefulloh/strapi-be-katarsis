@@ -4,10 +4,11 @@
   "info": {
     "singularName": "career-page",
     "pluralName": "career-pages",
-    "displayName": "Career Page"
+    "displayName": "Career Page",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
