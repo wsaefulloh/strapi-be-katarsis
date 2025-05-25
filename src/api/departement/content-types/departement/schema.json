@@ -23,6 +23,21 @@
     },
     "url": {
       "type": "text"
+    },
+    "sub_title_1": {
+      "type": "string"
+    },
+    "sub_title_2": {
+      "type": "string"
+    },
+    "desc_1": {
+      "type": "text"
+    },
+    "desc_2": {
+      "type": "text"
+    },
+    "url_title": {
+      "type": "string"
     }
   }
 }
